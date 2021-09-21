@@ -21,4 +21,13 @@ func main() {
 	elapsed1 := time.Since(start1)
 	fmt.Println(top)
 	fmt.Println("耗时:", elapsed1)
+
+	// rpns := []string{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"}
+	rpns := []string{"3", "11", "+", "5", "-"}
+	sum := stack.EvalRPN(rpns)
+	fmt.Println(sum)
+
+	nums := []int{1}
+	// nums := []int{1, 1, 1, 1, 1}
+	fmt.Println(stack.FindTargetSumWays(nums, 1))
 }
