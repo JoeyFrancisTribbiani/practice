@@ -23,6 +23,7 @@ func (h *BigIntHeap) Init(nums []int, capacity int) {
 	for _, v := range nums {
 		h.Push(v)
 	}
+	// shishi
 }
 
 func (h *BigIntHeap) Swap(i, j int) {
